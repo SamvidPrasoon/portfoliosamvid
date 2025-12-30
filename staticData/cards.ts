@@ -44,6 +44,6 @@ export const cards = [
     images: ["trek01", "trek02", "trek03", "trek04"],
     img: "comingSoon",
     tech: [],
-    link: "/projects/trek",
+    link: "/comingsoon",
   },
 ];

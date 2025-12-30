@@ -32,7 +32,12 @@ const navItems = [
 
 const Dock = () => {
   return (
-    <div className="relative z-30 mt-16 flex justify-center">
+    <div
+      className="
+        relative z-30 mt-16 hidden md:flex justify-center
+        scale-90 sm:scale-100
+      "
+    >
       <FloatingDock items={navItems} />
     </div>
   );
