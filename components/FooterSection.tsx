@@ -30,6 +30,12 @@ export function FooterSection() {
             >
               Say Hello
             </Link>
+            <Link
+              href="/resume"
+              className="px-5 py-2 rounded-xl  text-white font-medium border border-amber-100 border-2"
+            >
+              Check out My Resume
+            </Link>
           </div>
         </div>
 
