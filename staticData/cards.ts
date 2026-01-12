@@ -39,6 +39,15 @@ export const cards = [
     link: "/projects/trek",
   },
   {
+    title: "Medical Report Analyser (AI POWERED OLLAMA)",
+    description:
+      "Built an AI-powered medical report analysis platform using Next.js that converts raw text into structured, explainable clinical insights.",
+    images: ["med1", "med2", "med3", "med4"],
+    img: "med1",
+    tech: ["NextJs,Inngest,Tailwind css,OLLAMA"],
+    link: "/projects/medai",
+  },
+  {
     title: "NEW PROJECT COMING SOON",
     description: "Stay Tune",
     images: ["trek01", "trek02", "trek03", "trek04"],

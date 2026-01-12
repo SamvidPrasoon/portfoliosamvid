@@ -40,7 +40,7 @@ export default function Page() {
                   <b>Frameworks:</b> Next.js, Express.js, Elysia.js
                 </li>
                 <li>
-                  <b>Backend:</b> Node.js, REST API Design
+                  <b>Backend:</b> Node.js, REST API Design,INNGEST
                 </li>
                 <li>
                   <b>Data:</b> SQL, Drizzle ORM
@@ -56,6 +56,9 @@ export default function Page() {
                 </li>
                 <li>
                   <b>Tools:</b> Git
+                </li>
+                <li>
+                  <b>AI: </b>OLLAMA
                 </li>
               </ul>
             </div>
@@ -251,6 +254,34 @@ export default function Page() {
                     <li>
                       Implemented complete data purging on room destruction,
                       ensuring no data persisted beyond room lifetime.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-semibold">
+                    AI-Powered Medical Report Analyzer
+                  </p>
+                  <p className="italic text-gray-600">
+                    Next.js, TypeScript, Tailwind CSS, INNGEST, OLLAMA
+                  </p>
+                  <ul className="list-disc list-inside">
+                    <li>
+                      Built a web application that ingests medical reports (
+                      text) and generates structured, patient-friendly clinical
+                      insights.
+                    </li>
+                    <li>
+                      Implemented AI pipelines to produce summaries, abnormal
+                      flags, normal findings, and doctor discussion questions.
+                    </li>
+                    <li>
+                      Designed a responsive dashboard UI with real-time report
+                      status updates
+                    </li>
+                    <li>
+                      Focused on safe, explainable outputs rather than medical
+                      diagnosis to aid user understanding.
                     </li>
                   </ul>
                 </div>
