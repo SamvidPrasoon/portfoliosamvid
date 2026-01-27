@@ -191,19 +191,35 @@ export default function Page() {
 
               <div className="text-sm space-y-4">
                 <div>
-                  <p className="font-semibold">Portfolio Website</p>
+                  <p className="font-semibold">
+                    ArchMentor – AI System Design Mentor
+                  </p>
                   <p className="italic text-gray-600">
-                    Next.js, TypeScript, Tailwind CSS, shadcn/ui, Aceternity UI
+                    Next.js, TypeScript, Excalidraw, MongoDB, INNGEST,
+                    OLLAMA,Tailwind CSS
                   </p>
                   <ul className="list-disc list-inside">
                     <li>
-                      Designed and built a high-performance personal portfolio
-                      using Next.js with reusable components and responsive
-                      layouts.
+                      Built an AI-powered system design mentoring platform where
+                      users visually model architectures using Excalidraw and
+                      receive structured AI feedback.
                     </li>
                     <li>
-                      Optimized client-side data fetching using React Query,
-                      improving load times and application responsiveness.
+                      Designed multi-agent AI analysis pipelines (Architect,
+                      Scalability, Security personas) to evaluate strengths,
+                      risks, and improvement areas based strictly on diagram
+                      inputs.
+                    </li>
+                    <li>
+                      Implemented background AI workflows using INNGEST to
+                      ensure reliable, asynchronous analysis without blocking
+                      user interactions.
+                    </li>
+                    <li>Persisted canvas states and AI insights in MongoDB,</li>
+                    <li>
+                      Focused on non-hallucinatory, explainable AI outputs by
+                      enforcing diagram-constrained reasoning and structured
+                      JSON responses.
                     </li>
                   </ul>
                 </div>
@@ -267,8 +283,8 @@ export default function Page() {
                   </p>
                   <ul className="list-disc list-inside">
                     <li>
-                      Built a web application that ingests medical reports (
-                      text) and generates structured, patient-friendly clinical
+                      Built a web application that ingests medical reports
+                      (text) and generates structured, patient-friendly clinical
                       insights.
                     </li>
                     <li>
@@ -277,7 +293,7 @@ export default function Page() {
                     </li>
                     <li>
                       Designed a responsive dashboard UI with real-time report
-                      status updates
+                      status updates.
                     </li>
                     <li>
                       Focused on safe, explainable outputs rather than medical

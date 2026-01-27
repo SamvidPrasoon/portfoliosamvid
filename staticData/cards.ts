@@ -48,6 +48,15 @@ export const cards = [
     link: "/projects/medai",
   },
   {
+    title: "ArchMentor — AI-Powered System Design Canvas & Review Tool",
+    description:
+      "ArchMentor is a web-based system design canvas that combines visual architecture modeling with multi-agent AI analysis to help users evaluate and improve software system designs.",
+    images: ["arch1", "arch2", "arch3", "arch4", "arch5"],
+    img: "arch5",
+    tech: ["NextJs,Inngest,Tailwind css,OLLAMA", "MongoDB", "shadcn"],
+    link: "/projects/arch",
+  },
+  {
     title: "NEW PROJECT COMING SOON",
     description: "Stay Tune",
     images: ["trek01", "trek02", "trek03", "trek04"],
