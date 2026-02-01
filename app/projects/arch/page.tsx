@@ -1,96 +1,142 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { Highlight } from "@/components/ui/hero-highlight";
-import Link from "next/link";
 
 export default function ProjectsShowcasePage() {
   return (
-    <section className="min-h-screen bg-black px-4 md:px-6 py-20 md:py-24">
-      {/* Heading */}
-      <div className="max-w-6xl mx-auto mb-12 md:mb-16 text-center">
-        <h1 className="text-3xl md:text-6xl font-extrabold text-white">
+    <section className="min-h-screen bg-black px-4 md:px-6 py-20 md:py-28">
+      {/* ================= HEADER ================= */}
+      <div className="max-w-6xl mx-auto mb-14 md:mb-20 text-center">
+        <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-white">
           <Highlight className="text-black dark:text-white">
-            🧠 ArchMentor — AI-Powered System Design Canvas & Review Tool
+            ArchMentor
           </Highlight>
         </h1>
-        <p className="mt-3 md:mt-4 text-sm md:text-base text-neutral-400 max-w-2xl mx-auto">
-          ArchMentor is a web-based system design canvas that combines visual
-          architecture modeling with multi-agent AI analysis to help users
-          evaluate and improve software system designs.
+
+        <p className="mt-2 text-sm md:text-base text-neutral-500">
+          AI-Powered System Design Canvas & Review Tool
         </p>
-        <Link href="/" className="inline-block mt-4">
-          <button className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-neutral-200 transition">
+
+        <p className="mt-4 text-sm md:text-base text-neutral-400 max-w-3xl mx-auto leading-relaxed">
+          ArchMentor is a visual system design canvas combined with multi-agent
+          AI analysis to evaluate architectures, surface trade-offs, and provide
+          actionable design feedback for scalable software systems.
+        </p>
+
+        <Link href="/" className="inline-block mt-6">
+          <button
+            className="
+              rounded-lg
+              border border-white/15
+              bg-white/5
+              px-4 py-2
+              text-sm font-medium text-white
+              backdrop-blur
+              transition
+              hover:bg-white/10
+              cursor-pointer
+            "
+          >
             ← Back
           </button>
         </Link>
+        <a
+          href="https://excalidraw.com/#json=NrlGsSp0t5G6H5kIG9DQL,ZTiTflGRIiJYu2m7iA_qqQ"
+          className="inline-block mt-6"
+        >
+          <button
+            className="
+              rounded-lg
+              border border-white/15
+              bg-amber-700
+              px-4 py-2
+              text-sm font-medium text-white
+              backdrop-blur
+              transition
+              hover:bg-white/10
+              ml-2
+              cursor-pointer
+            "
+          >
+            Design Details
+          </button>
+        </a>
       </div>
 
-      {/* Bento Grid */}
+      {/* ================= BENTO GRID ================= */}
       <BentoGrid
         className="
           max-w-7xl mx-auto
           grid-cols-1 md:grid-cols-3
-          auto-rows-[18rem] md:auto-rows-[22rem]
+          auto-rows-[17rem] md:auto-rows-[20rem]
           gap-4
         "
       >
-        {/* BIG HERO CARD */}
+        {/* BIG HERO */}
         <BentoGridItem
-          className="bg-black h-[22rem] md:h-auto md:col-span-2 md:row-span-2"
+          className="
+            bg-black
+            md:col-span-2 md:row-span-2
+            transition-transform duration-300
+            hover:-translate-y-1
+          "
           header={
             <ProjectImage
               src="/arch2.png"
-              title="Canvas + AI Analysis"
-              description="Working Area"
+              title="Design Canvas + AI Review"
+              description="Visual architecture modeling with real-time AI feedback"
             />
           }
         />
 
         {/* MEDIUM */}
         <BentoGridItem
-          className="bg-black h-[18rem] md:h-auto"
+          className="bg-black transition-transform duration-300 hover:-translate-y-1"
           header={
             <ProjectImage
               src="/arch1.png"
               title="Dashboard"
-              description="Create + See your Designs"
+              description="Create, manage, and review system designs"
             />
           }
         />
 
         {/* MEDIUM */}
         <BentoGridItem
-          className="bg-black h-[18rem] md:h-auto"
+          className="bg-black transition-transform duration-300 hover:-translate-y-1"
           header={
             <ProjectImage
               src="/arch3.png"
-              title="AI Analysing"
-              description=""
+              title="AI Analysis"
+              description="Automated architecture critique and suggestions"
             />
           }
         />
 
         {/* SMALL */}
         <BentoGridItem
-          className="bg-black h-[16rem] md:h-auto"
+          className="bg-black transition-transform duration-300 hover:-translate-y-1"
           header={
             <ProjectImage
               src="/arch4.png"
-              title="INNGEST SERVER"
-              description="AI ANALYSIS"
+              title="Workflow Engine"
+              description="Event-driven analysis with Inngest"
               compact
             />
           }
         />
+
+        {/* SMALL */}
         <BentoGridItem
-          className="bg-black h-[16rem] md:h-auto"
+          className="bg-black transition-transform duration-300 hover:-translate-y-1"
           header={
             <ProjectImage
               src="/arch2.png"
-              title=""
-              description="Multi-Agent AI Architecture Analysis"
+              title="Multi-Agent AI"
+              description="Parallel reasoning across scalability, reliability, and cost"
               compact
             />
           }
@@ -103,6 +149,7 @@ export default function ProjectsShowcasePage() {
 /* ================================================= */
 /* PROJECT IMAGE CARD */
 /* ================================================= */
+
 function ProjectImage({
   src,
   title,
@@ -115,32 +162,72 @@ function ProjectImage({
   compact?: boolean;
 }) {
   return (
-    <div className="group relative h-full w-full overflow-hidden rounded-xl">
-      {/* Image */}
+    <div
+      className="
+        group relative h-full w-full overflow-hidden rounded-2xl
+        border border-white/10
+        bg-neutral-950
+        transition-all duration-300
+        hover:border-white/20
+        hover:shadow-[0_20px_60px_-20px_rgba(0,0,0,0.85)]
+      "
+    >
+      {/* IMAGE */}
       <Image
         src={src}
-        alt={title}
+        alt={title || "ArchMentor"}
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-        priority={title === "TREK"}
+        className="
+          object-cover
+          transition-transform duration-700 ease-out
+          group-hover:scale-[1.04]
+        "
+        priority={title === "Design Canvas + AI Review"}
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+      {/* OVERLAY */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-t
+          from-black/75
+          via-black/35
+          to-transparent
+        "
+      />
 
-      {/* Text */}
-      <div className="absolute bottom-0 p-4 md:p-5">
-        <h3
-          className={`font-semibold text-white ${
-            compact ? "text-base" : "text-xl md:text-2xl"
-          }`}
-        >
-          {title}
-        </h3>
-        <p className="mt-1 text-xs md:text-sm text-neutral-300 max-w-xs">
-          {description}
-        </p>
+      {/* TEXT PANEL */}
+      <div
+        className="
+          absolute bottom-0 w-full
+          p-4 md:p-5
+          backdrop-blur-sm
+          bg-black/30
+        "
+      >
+        {title && (
+          <h3
+            className={`font-medium tracking-tight text-white ${
+              compact ? "text-sm" : "text-lg md:text-xl"
+            }`}
+          >
+            {title}
+          </h3>
+        )}
+
+        {description && (
+          <p
+            className="
+              mt-1 text-xs md:text-sm
+              text-neutral-400
+              leading-relaxed
+              max-w-xs
+            "
+          >
+            {description}
+          </p>
+        )}
       </div>
     </div>
   );
