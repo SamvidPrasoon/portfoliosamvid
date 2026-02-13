@@ -57,6 +57,23 @@ export const cards = [
     link: "/projects/arch",
   },
   {
+    title: "AI SQL Studio(RAG)",
+    description:
+      "converts natural language queries into validated SQL,return results and real-time visual insights using agentic orchestration (LangGraph)",
+    images: ["aisql1", "aisql2", "aisql3", "aisql4"],
+    img: "aisql1",
+    tech: [
+      "express js",
+      "langchain",
+      "langraph",
+      "redis",
+      "qdrant(vectorDB)",
+      "llama3.2",
+      "embeddinggemma(embedder)",
+    ],
+    link: "/projects/aisql",
+  },
+  {
     title: "NEW PROJECT COMING SOON",
     description: "Stay Tune",
     images: ["trek01", "trek02", "trek03", "trek04"],

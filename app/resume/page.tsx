@@ -58,7 +58,7 @@ export default function Page() {
                   <b>Tools:</b> Git
                 </li>
                 <li>
-                  <b>AI: </b>OLLAMA
+                  <b>AI: </b> OLLAMA,Langchain,langgraph
                 </li>
               </ul>
             </div>
@@ -224,7 +224,7 @@ export default function Page() {
                   </ul>
                 </div>
 
-                <div>
+                {/* <div>
                   <p className="font-semibold">
                     Trek – Task & Board Management System
                   </p>
@@ -246,6 +246,35 @@ export default function Page() {
                       Designed and managed a cloud-native PostgreSQL data layer
                       on Neon, using Drizzle ORM to enforce schema consistency,
                       type safety, and data integrity.
+                    </li>
+                  </ul>
+                </div> */}
+                <div>
+                  <p className="font-semibold">
+                    AI-Powered natural language SQL engine(RAG)
+                  </p>
+                  <p className="italic text-gray-600">
+                    Next.js, TypeScript, LangGraph, langchain,, OLLAMA, TanStack
+                    Query, Tailwind CSS,redis,qdrant(vectorDB)
+                  </p>
+                  <ul className="list-disc list-inside">
+                    <li>
+                      Built an AI-powered SQL engine platform that converts
+                      natural language questions into executable SQL queries
+                      using stateful LangGraph workflows.
+                    </li>
+                    <li>
+                      Designed multi-stage agent pipelines including SQL
+                      generation, execution, validation, error-recovery loops
+                    </li>
+                    <li>
+                      Implemented controlled tool execution layer for secure
+                      database interaction, ensuring deterministic query
+                      execution and guarded responses.
+                    </li>
+                    <li>
+                      conversational memory to maintain historical context and
+                      improve query refinement accuracy.
                     </li>
                   </ul>
                 </div>
